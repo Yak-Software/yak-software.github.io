@@ -15,6 +15,14 @@
   "src": {
     "page": "index.dc.html"
   },
+  "fonts": {
+    "body": "Source Serif 4",
+    "heading": "Source Serif 4"
+  },
+  "animatedRoutes": [
+    "/diane/"
+  ],
+  "animMaskCss": "[style*='caret'],[style*='4.6cqw'],[style*='4.6cqw'] + span,[style*='2.15cqw']{visibility:hidden!important}",
   "og": {
     "og:type": "website",
     "og:site_name": "Yak Software",
@@ -65,7 +73,12 @@
     },
     {
       "hash": "diane",
-      "route": "/diane/",
+      "route": "/diane",
+      "animIdleGate": {
+        "selector": "#dc-root span[style*='4.6cqw']",
+        "contains": "rgb(58, 55, 51)",
+        "notContains": "animation"
+      },
       "title": "Diane — private dictation of the highest quality — Yak Software",
       "description": "Diane is dictation of the highest quality, into any application on any device, that stays confidential. In daily use on Windows, with an Android companion at concept stage.",
       "animTags": [
@@ -87,54 +100,54 @@
         }
       ],
       "injectHtml": [
-        "<script>(function(){var q=function(n){return document.querySelector('[data-dc-anim=\"'+n+'\"]');};var dict=q(\"dict\"),mic=q(\"mic\"),icon=q(\"mic-icon\"),timer=q(\"mic-timer\");if(!dict||!mic||!icon||!timer)return;var words=\"The short version: keep the current plan, move the review to Thursday, and ask for the updated numbers before we send anything out.\".split(\" \");var chunks=[[4,6],[10,12],[17,18]];var base=\"width:4.6cqw;height:4.6cqw;border-radius:50%;display:flex;align-items:center;justify-content:center;box-sizing:border-box;transition:background .3s,border-color .3s;\";var tick=0;function frame(){var shown=0,i;for(i=0;i<chunks.length;i++)if(tick>=chunks[i][0])shown=chunks[i][1];if(tick>=31)shown=words.length;dict.textContent=words.slice(0,shown).join(\" \")+(shown&&shown<words.length?\" \":\"\");if(tick<25){mic.style.cssText=base+\"background:#c3401f;animation:pulse 1.2s ease-in-out infinite\";icon.style.opacity=\"1\";icon.setAttribute(\"stroke\",\"#f1ece2\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#f1ece2\");timer.textContent=\"0:\"+String(15+tick).padStart(2,\"0\");}else if(tick<31){mic.style.cssText=base+\"background:#f1ece2;border:0.28cqw solid #d8d0bf;border-top-color:#c3401f;box-shadow:0 0.5cqw 1.2cqw rgba(58,55,51,.22);animation:spin .9s linear infinite\";icon.style.opacity=\"0\";icon.setAttribute(\"stroke\",\"#7a7368\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#7a7368\");timer.textContent=\"\";}else{mic.style.cssText=base+\"background:#f1ece2;border:0.28cqw solid #3a3733;box-shadow:0 0.5cqw 1.2cqw rgba(58,55,51,.22)\";icon.style.opacity=\"1\";icon.setAttribute(\"stroke\",\"#7a7368\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#7a7368\");timer.textContent=\"\";}tick=(tick+1)%36;}frame();setInterval(frame,400);})();</script>"
+        "<script>(function(){var q=function(n){return document.querySelector('[data-dc-anim=\"'+n+'\"]');};var dict=q(\"dict\"),mic=q(\"mic\"),icon=q(\"mic-icon\"),timer=q(\"mic-timer\");if(!dict||!mic||!icon||!timer)return;var words=\"The short version: keep the current plan, move the review to Thursday, and ask for the updated numbers before we send anything out.\".split(\" \");var chunks=[[4,6],[10,12],[17,18]];var base=\"width:4.6cqw;height:4.6cqw;border-radius:50%;display:flex;align-items:center;justify-content:center;box-sizing:border-box;transition:background .3s,border-color .3s;\";var tick=31;function frame(){var shown=0,i;for(i=0;i<chunks.length;i++)if(tick>=chunks[i][0])shown=chunks[i][1];if(tick>=31)shown=words.length;dict.textContent=words.slice(0,shown).join(\" \")+(shown&&shown<words.length?\" \":\"\");if(tick<25){mic.style.cssText=base+\"background:#c3401f;animation:pulse 1.2s ease-in-out infinite\";icon.style.opacity=\"1\";icon.setAttribute(\"stroke\",\"#f1ece2\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#f1ece2\");timer.textContent=\"0:\"+String(15+tick).padStart(2,\"0\");}else if(tick<31){mic.style.cssText=base+\"background:#f1ece2;border:0.28cqw solid #d8d0bf;border-top-color:#c3401f;box-shadow:0 0.5cqw 1.2cqw rgba(58,55,51,.22);animation:spin .9s linear infinite\";icon.style.opacity=\"0\";icon.setAttribute(\"stroke\",\"#7a7368\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#7a7368\");timer.textContent=\"\";}else{mic.style.cssText=base+\"background:#f1ece2;border:0.28cqw solid #3a3733;box-shadow:0 0.5cqw 1.2cqw rgba(58,55,51,.22)\";icon.style.opacity=\"1\";icon.setAttribute(\"stroke\",\"#7a7368\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#7a7368\");timer.textContent=\"\";}tick=(tick+1)%36;}frame();setInterval(frame,400);})();</script>"
       ]
     },
     {
       "hash": "agent-cage",
-      "route": "/agent-cage/",
+      "route": "/agent-cage",
       "title": "agent-cage — run AI coding agents unattended — Yak Software",
       "description": "agent-cage runs AI coding agents on your own servers, unattended, from a chat — with exactly the permissions they need and nothing more. In active use; public release 1 October 2026."
     },
     {
       "hash": "molt-petit",
-      "route": "/molt-petit/",
+      "route": "/molt-petit",
       "title": "Molt Petit — a machine-checked consensus protocol — Yak Software",
       "description": "Molt Petit is a consensus protocol small enough to understand in a minute, with deterministic fast finality, machine-checked from the Rust implementation to Lean 4 theorems. The consensus core of Ledger."
     },
     {
       "hash": "ledger",
-      "route": "/ledger/",
+      "route": "/ledger",
       "title": "Ledger — records that stay correct and private — Yak Software",
       "description": "Ledger keeps company records correct, and private, even when someone inside — human or AI — has access to every server. Built on the proven Molt Petit consensus core."
     },
     {
       "hash": "research",
-      "route": "/research/",
+      "route": "/research",
       "title": "Research — proof-driven development — Yak Software",
       "description": "Yak's research programme: moving the critical parts of a system from tests that sample behaviour to properties proved about the artifact that ships. Molt Petit is the first substantial example."
     },
     {
       "hash": "consulting",
-      "route": "/consulting/",
+      "route": "/consulting",
       "title": "Consulting — architecture, protocols and systems — Yak Software",
       "description": "Software architecture, protocols and reliable systems, built or fixed with extreme rigour so they run nearly all the time with minimal maintenance. Available in limited capacity."
     },
     {
       "hash": "about",
-      "route": "/about/",
+      "route": "/about",
       "title": "About — Yak Software",
       "description": "Yak Software is an independent engineering and research company in Andorra, founded and led by George Agapov, building systems that have to be right when nobody is watching."
     },
     {
       "hash": "contact",
-      "route": "/contact/",
+      "route": "/contact",
       "title": "Contact — Yak Software",
       "description": "Get in touch with Yak Software: george@yak.ad, or on Telegram, X, GitHub and LinkedIn. Replies come from a person, usually within a day, Central European time."
     },
     {
       "hash": "finance",
-      "route": "/finance/",
+      "route": "/finance",
       "title": "Financial systems — Yak Software",
       "description": "Financial systems from Yak Software: a ledger and the consensus protocol beneath it — infrastructure where being wrong is unrecoverable, and the reasoning behind it."
     }
