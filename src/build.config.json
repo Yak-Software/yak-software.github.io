@@ -125,7 +125,7 @@
       "hash": "research",
       "route": "/research",
       "title": "Research — proof-driven development — Yak Software",
-      "description": "Yak's research programme: moving the critical parts of a system from tests that sample behaviour to properties proved about the artifact that ships. Molt Petit is the first substantial example."
+      "description": "AI agents change the economics of formal verification: for some software, properties that were too expensive to prove can become part of normal development. Molt Petit is the first substantial result."
     },
     {
       "hash": "consulting",
