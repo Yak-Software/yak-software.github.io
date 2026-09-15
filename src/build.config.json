@@ -1,0 +1,142 @@
+{
+  "name": "yak",
+  "domain": "https://yak.ad",
+  "siteDir": "..",
+  "outDir": "..",
+  "sourcePage": "index.html",
+  "copyFromSite": [
+    "assets",
+    "CNAME",
+    ".nojekyll"
+  ],
+  "copyExclude": [
+    "vendor"
+  ],
+  "src": {
+    "page": "index.dc.html"
+  },
+  "og": {
+    "og:type": "website",
+    "og:site_name": "Yak Software",
+    "og:image": "https://yak.ad/assets/og-yak.jpg",
+    "og:image:width": "1200",
+    "og:image:height": "630"
+  },
+  "twitter": {
+    "twitter:card": "summary_large_image",
+    "twitter:site": "@just_georgeee",
+    "twitter:image": "https://yak.ad/assets/og-yak.jpg"
+  },
+  "hashRedirect": true,
+  "notFound": {
+    "title": "Page not found — Yak Software",
+    "basedOn": "home",
+    "bodyHtml": "<div style=\"padding:14vh 0 18vh\"><h1 style=\"font:400 clamp(30px,4vw,48px)/1.15 'Source Serif 4',serif;letter-spacing:-.02em;color:#3a3733\">Page not found</h1><p style=\"margin-top:16px;max-width:38em;font-size:18px\">This address doesn't match anything on the site. The navigation above will take you to the work, the research, or a way to get in touch.</p><p style=\"margin:22px 0 0\"><a href=\"/\" style=\"font:400 14px/1 'Source Code Pro',ui-monospace,monospace\">yak.ad &rarr;</a></p></div>"
+  },
+  "screens": [
+    {
+      "hash": "home",
+      "route": "/",
+      "hashRedirect": true,
+      "title": "Yak Software — independent engineering and research, Andorra",
+      "description": "Yak Software is an independent engineering and research company in Andorra, working on dictation, coding agents, consensus protocols and financial infrastructure — systems whose guarantees hold without trusting whoever runs them.",
+      "jsonLd": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Yak Software",
+        "url": "https://yak.ad/",
+        "logo": "https://yak.ad/assets/yak-favicon.svg",
+        "image": "https://yak.ad/assets/og-yak.jpg",
+        "description": "Independent engineering and research company in Andorra, working on dictation, coding agents, consensus protocols and financial infrastructure.",
+        "email": "mailto:george@yak.ad",
+        "founder": {
+          "@type": "Person",
+          "name": "George Agapov",
+          "url": "https://georgeee.com/"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "AD"
+        },
+        "sameAs": [
+          "https://github.com/georgeee"
+        ]
+      }
+    },
+    {
+      "hash": "diane",
+      "route": "/diane/",
+      "title": "Diane — private dictation of the highest quality — Yak Software",
+      "description": "Diane is dictation of the highest quality, into any application on any device, that stays confidential. In daily use on Windows, with an Android companion at concept stage.",
+      "animTags": [
+        {
+          "tag": "mic",
+          "selector": "#dc-root span[style*='4.6cqw']"
+        },
+        {
+          "tag": "mic-icon",
+          "selector": "[data-dc-anim='mic'] svg"
+        },
+        {
+          "tag": "mic-timer",
+          "selector": "[data-dc-anim='mic'] + span"
+        },
+        {
+          "tag": "dict",
+          "wrapText": "short version: keep"
+        }
+      ],
+      "injectHtml": [
+        "<script>(function(){var q=function(n){return document.querySelector('[data-dc-anim=\"'+n+'\"]');};var dict=q(\"dict\"),mic=q(\"mic\"),icon=q(\"mic-icon\"),timer=q(\"mic-timer\");if(!dict||!mic||!icon||!timer)return;var words=\"The short version: keep the current plan, move the review to Thursday, and ask for the updated numbers before we send anything out.\".split(\" \");var chunks=[[4,6],[10,12],[17,18]];var base=\"width:4.6cqw;height:4.6cqw;border-radius:50%;display:flex;align-items:center;justify-content:center;box-sizing:border-box;transition:background .3s,border-color .3s;\";var tick=0;function frame(){var shown=0,i;for(i=0;i<chunks.length;i++)if(tick>=chunks[i][0])shown=chunks[i][1];if(tick>=31)shown=words.length;dict.textContent=words.slice(0,shown).join(\" \")+(shown&&shown<words.length?\" \":\"\");if(tick<25){mic.style.cssText=base+\"background:#c3401f;animation:pulse 1.2s ease-in-out infinite\";icon.style.opacity=\"1\";icon.setAttribute(\"stroke\",\"#f1ece2\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#f1ece2\");timer.textContent=\"0:\"+String(15+tick).padStart(2,\"0\");}else if(tick<31){mic.style.cssText=base+\"background:#f1ece2;border:0.28cqw solid #d8d0bf;border-top-color:#c3401f;box-shadow:0 0.5cqw 1.2cqw rgba(58,55,51,.22);animation:spin .9s linear infinite\";icon.style.opacity=\"0\";icon.setAttribute(\"stroke\",\"#7a7368\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#7a7368\");timer.textContent=\"\";}else{mic.style.cssText=base+\"background:#f1ece2;border:0.28cqw solid #3a3733;box-shadow:0 0.5cqw 1.2cqw rgba(58,55,51,.22)\";icon.style.opacity=\"1\";icon.setAttribute(\"stroke\",\"#7a7368\");icon.querySelector(\"rect\").setAttribute(\"fill\",\"#7a7368\");timer.textContent=\"\";}tick=(tick+1)%36;}frame();setInterval(frame,400);})();</script>"
+      ]
+    },
+    {
+      "hash": "agent-cage",
+      "route": "/agent-cage/",
+      "title": "agent-cage — run AI coding agents unattended — Yak Software",
+      "description": "agent-cage runs AI coding agents on your own servers, unattended, from a chat — with exactly the permissions they need and nothing more. In active use; public release 1 October 2026."
+    },
+    {
+      "hash": "molt-petit",
+      "route": "/molt-petit/",
+      "title": "Molt Petit — a machine-checked consensus protocol — Yak Software",
+      "description": "Molt Petit is a consensus protocol small enough to understand in a minute, with deterministic fast finality, machine-checked from the Rust implementation to Lean 4 theorems. The consensus core of Ledger."
+    },
+    {
+      "hash": "ledger",
+      "route": "/ledger/",
+      "title": "Ledger — records that stay correct and private — Yak Software",
+      "description": "Ledger keeps company records correct, and private, even when someone inside — human or AI — has access to every server. Built on the proven Molt Petit consensus core."
+    },
+    {
+      "hash": "research",
+      "route": "/research/",
+      "title": "Research — proof-driven development — Yak Software",
+      "description": "Yak's research programme: moving the critical parts of a system from tests that sample behaviour to properties proved about the artifact that ships. Molt Petit is the first substantial example."
+    },
+    {
+      "hash": "consulting",
+      "route": "/consulting/",
+      "title": "Consulting — architecture, protocols and systems — Yak Software",
+      "description": "Software architecture, protocols and reliable systems, built or fixed with extreme rigour so they run nearly all the time with minimal maintenance. Available in limited capacity."
+    },
+    {
+      "hash": "about",
+      "route": "/about/",
+      "title": "About — Yak Software",
+      "description": "Yak Software is an independent engineering and research company in Andorra, founded and led by George Agapov, building systems that have to be right when nobody is watching."
+    },
+    {
+      "hash": "contact",
+      "route": "/contact/",
+      "title": "Contact — Yak Software",
+      "description": "Get in touch with Yak Software: george@yak.ad, or on Telegram, X, GitHub and LinkedIn. Replies come from a person, usually within a day, Central European time."
+    },
+    {
+      "hash": "finance",
+      "route": "/finance/",
+      "title": "Financial systems — Yak Software",
+      "description": "Financial systems from Yak Software: a ledger and the consensus protocol beneath it — infrastructure where being wrong is unrecoverable, and the reasoning behind it."
+    }
+  ]
+}
