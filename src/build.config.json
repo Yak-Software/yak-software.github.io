@@ -20,7 +20,7 @@
     "heading": "Source Serif 4"
   },
   "animatedRoutes": [
-    "/diane/"
+    "/diane"
   ],
   "animMaskCss": "[style*='caret'],[style*='4.6cqw'],[style*='4.6cqw'] + span,[style*='2.15cqw']{visibility:hidden!important}",
   "og": {
