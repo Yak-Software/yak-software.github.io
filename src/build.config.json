@@ -36,6 +36,28 @@
     "twitter:image": "https://yak.ad/assets/og-yak.jpg"
   },
   "hashRedirect": true,
+  "foreign": {
+    "base": "https://yak.finance",
+    "routes": {
+      "finance": "/",
+      "molt-petit": "/molt-petit",
+      "ledger": "/ledger"
+    }
+  },
+  "redirects": [
+    {
+      "from": "/molt-petit",
+      "to": "https://yak.finance/molt-petit"
+    },
+    {
+      "from": "/ledger",
+      "to": "https://yak.finance/ledger"
+    },
+    {
+      "from": "/finance",
+      "to": "https://yak.finance/"
+    }
+  ],
   "notFound": {
     "title": "Page not found — Yak Software",
     "basedOn": "home",
@@ -110,18 +132,6 @@
       "description": "agent-cage runs AI coding agents on your own servers, unattended, from a chat — with exactly the permissions they need and nothing more. In active use; public release 1 October 2026."
     },
     {
-      "hash": "molt-petit",
-      "route": "/molt-petit",
-      "title": "Molt Petit — a machine-checked consensus protocol — Yak Software",
-      "description": "Molt Petit is a consensus protocol small enough to understand in a minute, with deterministic fast finality, machine-checked from the Rust implementation to Lean 4 theorems. The consensus core of Ledger."
-    },
-    {
-      "hash": "ledger",
-      "route": "/ledger",
-      "title": "Ledger — records that stay correct and private — Yak Software",
-      "description": "Ledger keeps company records correct, and private, even when someone inside — human or AI — has access to every server. Built on the proven Molt Petit consensus core."
-    },
-    {
       "hash": "research",
       "route": "/research",
       "title": "Research — proof-driven development — Yak Software",
@@ -144,12 +154,6 @@
       "route": "/contact",
       "title": "Contact — Yak Software",
       "description": "Get in touch with Yak Software: george@yak.ad, or on Telegram, X, GitHub and LinkedIn. Replies come from a person, usually within a day, Central European time."
-    },
-    {
-      "hash": "finance",
-      "route": "/finance",
-      "title": "Financial systems — Yak Software",
-      "description": "Financial systems from Yak Software: a ledger and the consensus protocol beneath it — infrastructure where being wrong is unrecoverable, and the reasoning behind it."
     }
   ]
 }
