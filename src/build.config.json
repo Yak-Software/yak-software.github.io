@@ -132,8 +132,8 @@
     {
       "hash": "lodge",
       "route": "/lodge",
-      "title": "lodge — host autonomous coding agents on your own Linux servers — Yak Software",
-      "description": "lodge hosts autonomous coding agents (Claude, Antigravity) on Linux: one set of accounts per agent, a privilege-split executor, a Telegram control chat, and signed upgrades. In active use; public release 4 December 2026."
+      "title": "Lodge — host autonomous coding agents on your own Linux servers — Yak Software",
+      "description": "Lodge hosts autonomous coding agents (Claude, Antigravity) on Linux: one set of accounts per agent, a privilege-split executor, a Telegram control chat, and signed upgrades. In active use; public release 4 December 2026."
     },
     {
       "hash": "research",
