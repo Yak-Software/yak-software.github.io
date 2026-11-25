@@ -155,6 +155,12 @@
       "description": "AI agents change the economics of formal verification: for some software, properties that were too expensive to prove can become part of normal development. Molt Petit is the first substantial result."
     },
     {
+      "hash": "small-models",
+      "route": "/small-models",
+      "title": "Small language models, used the right way — Yak Software",
+      "description": "A fine-tuned 4B model with two narrow jobs inside deterministic software: as capable as large hosted models on a banking prototype, impossible to talk off-script, and run with speech in and out on one 24 GB GPU server."
+    },
+    {
       "hash": "consulting",
       "route": "/consulting",
       "title": "Consulting — architecture, delivery and hard technical calls — Yak Software",
