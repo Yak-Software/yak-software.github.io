@@ -145,7 +145,13 @@
     {
       "hash": "research",
       "route": "/research",
-      "title": "Research — proof-driven development — Yak Software",
+      "title": "Research — proof-driven development and small language models — Yak Software",
+      "description": "Yak Software research: proof-driven development with AI agents, and small fine-tuned language models that match large ones inside deterministic software, on one in-house GPU server."
+    },
+    {
+      "hash": "proof-driven",
+      "route": "/proof-driven",
+      "title": "Proof-driven development — Yak Software",
       "description": "AI agents change the economics of formal verification: for some software, properties that were too expensive to prove can become part of normal development. Molt Petit is the first substantial result."
     },
     {
