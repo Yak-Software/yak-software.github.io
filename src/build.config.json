@@ -56,6 +56,10 @@
     {
       "from": "/finance",
       "to": "https://yak.finance/"
+    },
+    {
+      "from": "/agent-cage",
+      "to": "https://yak.ad/lodge"
     }
   ],
   "notFound": {
@@ -126,10 +130,10 @@
       ]
     },
     {
-      "hash": "agent-cage",
-      "route": "/agent-cage",
-      "title": "agent-cage — run AI coding agents unattended — Yak Software",
-      "description": "agent-cage runs AI coding agents on your own servers, unattended, from a chat — with exactly the permissions they need and nothing more. In active use; public release 1 October 2026."
+      "hash": "lodge",
+      "route": "/lodge",
+      "title": "Lodge — host autonomous coding agents on your own Linux servers — Yak Software",
+      "description": "Lodge hosts autonomous coding agents (Claude, Antigravity) on Linux: one set of accounts per agent, a privilege-split executor, a Telegram control chat, and signed upgrades. In active use; public release 4 December 2026."
     },
     {
       "hash": "research",
