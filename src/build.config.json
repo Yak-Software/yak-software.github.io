@@ -74,7 +74,7 @@
       "route": "/",
       "hashRedirect": true,
       "title": "Yak Software — independent engineering and research, Andorra",
-      "description": "Yak Software is an independent engineering and research company in Andorra, working on dictation, coding agents, consensus protocols and financial infrastructure — systems whose guarantees hold without trusting whoever runs them.",
+      "description": "Yak Software is an independent engineering and research company in Andorra, working on dictation, coding agents, small language models and financial infrastructure — AI given a narrow job, with the rest in ordinary, checkable software on hardware you control.",
       "jsonLd": {
         "@context": "https://schema.org",
         "@type": "Organization",
