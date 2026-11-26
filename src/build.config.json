@@ -20,9 +20,10 @@
     "heading": "Source Serif 4"
   },
   "animatedRoutes": [
-    "/diane"
+    "/diane",
+    "/bosc"
   ],
-  "animMaskCss": "[style*='caret'],[style*='4.6cqw'],[style*='4.6cqw'] + span,[style*='2.15cqw']{visibility:hidden!important}",
+  "animMaskCss": "[style*='caret'],[style*='4.6cqw'],[style*='4.6cqw'] + span,[style*='2.15cqw'],img[src*='bosc/scene.svg']{visibility:hidden!important}",
   "og": {
     "og:type": "website",
     "og:site_name": "Yak Software",
@@ -134,6 +135,12 @@
       "route": "/lodge",
       "title": "Lodge — host autonomous coding agents on your own Linux servers — Yak Software",
       "description": "Lodge hosts autonomous coding agents (Claude, Antigravity) on Linux: one set of accounts per agent, a privilege-split executor, a Telegram control chat, and signed upgrades. In active use; public release 4 December 2026."
+    },
+    {
+      "hash": "bosc",
+      "route": "/bosc",
+      "title": "Bosc — children’s drawings come alive on the big screen — Yak Software",
+      "description": "Bosc brings a child’s paper drawing to life: colour a sheet, photograph it with a phone, and the creature appears in its own colours in a 3D forest, ocean or space on a TV, projector or laptop. No accounts; public beta at bosc.live."
     },
     {
       "hash": "research",
