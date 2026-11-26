@@ -161,6 +161,12 @@
       "description": "A fine-tuned 4B model with two narrow jobs inside deterministic software: as capable as large hosted models on a banking prototype, impossible to talk off-script, and run with speech in and out on one 24 GB GPU server."
     },
     {
+      "hash": "agentic-survey",
+      "route": "/agentic-survey",
+      "title": "Agentic AI on confidential data — Yak Software",
+      "description": "A survey of agentic AI on confidential data: which models can orchestrate and which can do the work, what each costs per billion tokens across APIs, flat plans, confidential-computing APIs and owned hardware, and which setups keep the data inside the boundary."
+    },
+    {
       "hash": "consulting",
       "route": "/consulting",
       "title": "Consulting — architecture, delivery and hard technical calls — Yak Software",
